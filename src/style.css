@@ -1,3 +1,13 @@
+@font-face {
+  font-family: IndustryBold;
+  src: url('../assets/fonts/Industry-Bold.woff2');
+}
+
+@font-face {
+  font-family: IndustryBook;
+  src: url('../assets/fonts/Industry-Book.woff2');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +16,10 @@
 
 html,
 body {
-  font-family: Helvetica, sans-serif;
-  height: 100%; 
-    width: 100%;
+  font-family: IndustryBook, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  background: rgb(242,239,228);
 }
 
 #app {

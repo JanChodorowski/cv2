@@ -29,11 +29,16 @@ module.exports = {
       {
         test: /\.(svg|png|jpg)$/,
         use: {
-          // loader: "file-loader"
           loader: "base64-inline-loader"
         }
       },
 
+      {
+        test: /\.woff2$/,
+        use: {
+          loader: "file-loader"
+        }
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

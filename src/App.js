@@ -5,7 +5,6 @@ import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
-// Code-splitting is automated for routes
 import Home from "./routes/home";
 import Profile from "./routes/profile";
 import Contact from "./routes/contact"
@@ -35,10 +34,6 @@ export default class App extends Component {
   };
 
   render() {
-    // I18n.changeLocale("pl");
-    // console.log("po zmianie języka");
-    // console.log(I18n);
-
     return (
       <div id="app">
         <Toolbar
@@ -63,8 +58,6 @@ export default class App extends Component {
           <Profile path="/profile/" />
           <Contact path="/contact" />
         </Router>
-        {/* <div>{I18n.t("test")}</div>
-        <div translate="yes">translate test</div> */}
       </div>
     );
   }

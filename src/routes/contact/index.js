@@ -1,9 +1,10 @@
 import { h } from "preact";
 import I18n from "../../i18n/settings";
-import Plane from "../../../assets/plane.svg";
-import Location from "../../../assets/location.svg";
-import Mobile from "../../../assets/mobile.svg";
-import Mail from "../../../assets/mail.svg";
+// import Plane from "../../../assets/images/plane.svg";
+import Plane from "../../../assets/images/contact.png";
+import Location from "../../../assets/images/location.svg";
+import Mobile from "../../../assets/images/mobile.svg";
+import Mail from "../../../assets/images/mail.svg";
 
 import "./style.css";
 

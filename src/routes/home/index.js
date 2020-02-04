@@ -1,12 +1,12 @@
 import { h } from "preact";
 import "./style.css";
 import I18n from "../../i18n/settings";
-import Avatar from "../../../assets/me.png";
-import Graduation from "../../../assets/graduation.svg";
-import Globe from "../../../assets/globe.svg";
-import Computer from "../../../assets/computer.svg";
-import Rise from "../../../assets/rise.svg";
-import Monterail from "../../../assets/monterail.svg";
+import Avatar from "../../../assets/images/me.png";
+import Graduation from "../../../assets/images/graduation.svg";
+import Globe from "../../../assets/images/globe.svg";
+import Computer from "../../../assets/images/computer.svg";
+import Rise from "../../../assets/images/rise.svg";
+import Monterail from "../../../assets/images/monterail.svg";
 
 const Home = () => {
   const today = Date.now();

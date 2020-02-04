@@ -2,8 +2,8 @@ import { h } from "preact";
 
 import I18n from "../../i18n/settings";
 import { Link } from "preact-router/match";
-import GithubLogo from "../../../assets/githubLogo.svg";
-import Avatar from "../../../assets/me.png";
+import GithubLogo from "../../../assets/images/githubLogo.svg";
+import Avatar from "../../../assets/images/me.png";
 
 import "./SideDrawer.css";
 import CloseDrawerButton from "./DrawerCloseButton";

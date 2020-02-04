@@ -2,14 +2,10 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  mode: "development",
+  mode: 'development',
   devtool: 'inline-source-map',
-  devServer:{
-      contentBase: './build',
-      hot: true
+  devServer: {
+    contentBase: './build',
+    hot: true
   }
 });
-
-
-
-//add tree shaking

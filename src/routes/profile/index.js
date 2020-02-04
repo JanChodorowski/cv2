@@ -1,11 +1,11 @@
 import { h, Component } from "preact";
 import "./style.css";
 import I18n from "../../i18n/settings";
-import Cat from "../../../assets/cat.svg";
-import JSLogo from "../../../assets/jsLogo.svg";
-import Team from "../../../assets/team.svg";
-import Tools from "../../../assets/tools.svg";
-import Checklist from "../../../assets/checklist.svg";
+import Cat from "../../../assets/images/cat.svg";
+import JSLogo from "../../../assets/images/jsLogo.svg";
+import Team from "../../../assets/images/team.svg";
+import Tools from "../../../assets/images/tools.svg";
+import Checklist from "../../../assets/images/checklist.svg";
 
 export default class Profile extends Component {
   render() {

@@ -1,3 +1,7 @@
+:root {
+  --blue: #083755;
+}
+
 .side-drawer {
   height: 100%;
   background: white;
@@ -39,26 +43,26 @@
 }
 
 div.contact-me {
+  text-transform: uppercase;
   display: inline-block;
   margin: 1rem auto;
   font-size: 14px;
-  border-radius: 20px;
   padding: 10px 15px;
-  border: 1px #ec1923 solid;
-  color: #ec1923;
+  border: 1px var(--blue) solid;
+  color: var(--blue);
   background: white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 div.contact-me:hover {
-  background: #ec1923;
+  background: var(--blue);
   color: white;
 }
 
 div.contact-me a {
   transition: all 0.2s ease-in-out;
-  color: #ec1923;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -123,7 +127,7 @@ span.active {
 }
 
 .active-route {
-  border-bottom: 1px solid #ec1923;
+  border-bottom: 1px solid var(--blue);
 }
 
 .side-drawer span.active-lang {
