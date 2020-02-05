@@ -1,5 +1,6 @@
 import { h } from "preact";
 import "./style.css";
+import Carousel from '../../components/Carousel/Carousel';
 import I18n from "../../i18n/settings";
 import Avatar from "../../../assets/images/me.png";
 import Graduation from "../../../assets/images/graduation.svg";
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <div className="home">
       <img className="avatar" src={Avatar} />
+      <Carousel/>
       <div className="greeting">{I18n.t("greeting")}</div>
       <div className="greeting sub">{I18n.t("greetingSub")}</div>
       <div className="content">

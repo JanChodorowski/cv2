@@ -35,7 +35,7 @@ nav *::-moz-selection {
 .toolbar__logo img {
   height: 40px;
   text-decoration: none;
-  margin: 15px 0 0 15px;
+  margin: 5px 0 0 15px;
 }
 
 .toolbar .spacer {

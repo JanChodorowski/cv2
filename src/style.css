@@ -12,6 +12,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: rgb(8, 55, 85);
 }
 
 html,
@@ -19,7 +20,7 @@ body {
   font-family: IndustryBook, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
-  background: rgb(242,239,228);
+  background: rgb(242, 239, 228);
 }
 
 #app {

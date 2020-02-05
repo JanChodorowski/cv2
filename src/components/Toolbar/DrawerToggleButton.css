@@ -11,8 +11,8 @@
   float: right;
 }
 
-.toggle-button:hover .toggle-button__line{
-  background: rgba(1, 1, 1, 0.5);
+.toggle-button:hover .toggle-button__line {
+  background: rgba(5, 55, 85);
 }
 
 .toggle-button:focus {
@@ -23,6 +23,6 @@
   width: 30px;
   height: 2px;
   border-radius: 3px;
-  background: rgba(1, 1, 1, 0.2);
+  background: rgba(5, 55, 85, 0.5);
   transition: 0.3s all ease-in-out;
 }
