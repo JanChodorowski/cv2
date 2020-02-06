@@ -3,7 +3,7 @@ import { h } from "preact";
 import I18n from "../../i18n/settings";
 import { Link } from "preact-router/match";
 import GithubLogo from "../../../assets/images/githubLogo.svg";
-import Avatar from "../../../assets/images/me.png";
+import Avatar from "../../../assets/images/me.jpg";
 
 import "./SideDrawer.css";
 import CloseDrawerButton from "./DrawerCloseButton";
@@ -67,19 +67,6 @@ const sideDrawer = props => {
             </Link>
           </li>
           <li>
-            <Link
-              onClick={() => {
-                props.closeSideDrawer(true);
-                scrollTop();
-              }}
-              activeClassName="active-route"
-              href="/profile"
-            >
-              {I18n.t("profile")}
-            </Link>
-          </li>
-
-          <li>
             <a href={CVLink}>CV</a>
           </li>
         </ul>
@@ -90,7 +77,7 @@ const sideDrawer = props => {
           title={I18n.t("gitRepoLink")}
           class="github__logo"
           onClick={alertNetworkMessage}
-          href="https://github.com/JanChodorowski/cv"
+          href="https://github.com/JanChodorowski/cv2"
         >
           <img src={GithubLogo} />
         </a>

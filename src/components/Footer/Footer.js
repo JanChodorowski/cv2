@@ -11,7 +11,7 @@ const Footer = () => (
   <div className='footer__wrapper'>
     <a
       onClick={alertNetworkMessage}
-      href='https://github.com/JanChodorowski/cv'
+      href='https://github.com/JanChodorowski/cv2'
     >
       <img className='footer__github' src={GithubLogo} />
     </a>

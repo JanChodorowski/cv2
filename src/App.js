@@ -6,7 +6,6 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
 import Home from './routes/home';
-import Profile from './routes/profile';
 import Contact from './routes/contact';
 
 import I18n from './i18n/settings';
@@ -55,7 +54,6 @@ export default class App extends Component {
 
         <Router onChange={this.handleRoute}>
           <Home path='/' />
-          <Profile path='/profile/' />
           <Contact path='/contact' />
         </Router>
       </div>

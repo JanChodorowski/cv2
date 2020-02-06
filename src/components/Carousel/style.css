@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 50px;
   padding-bottom: 30px;
+  margin-top: 150px;
   width: 100%;
   background: rgb(5, 55, 85);
   color: #f2efe4;
@@ -106,12 +107,18 @@ div.testimonial__content {
 }
 
 @media (max-width: 480px) {
+
+  .testimonial__content {
+    font-size: 0.7rem;
+  }
+
+
   .carousel__item{
     margin: 0 20px;
   }
 
   .chevron{
-    display:none;
+    display: none;
   }
 }
 

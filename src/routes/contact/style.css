@@ -20,12 +20,12 @@
 }
 
 span.heading {
+  font-family: IndustryBold;
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem 0;
   display: inline-block;
   text-align: center;
-  opacity: 0.5;
 }
 
 .contact__items {

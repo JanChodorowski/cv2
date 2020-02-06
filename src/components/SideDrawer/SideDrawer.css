@@ -4,7 +4,7 @@
 
 .side-drawer {
   height: 100%;
-  background: white;
+  background: rgb(30, 30, 30);
   box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -16,7 +16,6 @@
   transition: transform 0.5s ease-out;
   display: flex;
   flex-direction: column;
-
 }
 
 .avatar {
@@ -29,11 +28,11 @@
   width: 90%;
   max-width: 170px;
   display: block;
-  border: 1.5px solid rgba(52, 130, 231, 0.24);
-  border-radius: 50%;
+  border: 8px solid white;
 }
 
 .name {
+  color: rgb(242, 239, 228);
   margin-top: 1rem;
   text-align: center;
 }
@@ -48,7 +47,7 @@ div.contact-me {
   margin: 1rem auto;
   font-size: 14px;
   padding: 10px 15px;
-  border: 1px var(--blue) solid;
+  border: 1px white solid;
   color: var(--blue);
   background: white;
   cursor: pointer;
@@ -92,7 +91,8 @@ div.contact-me:hover a {
 
 .side-drawer ul a {
   text-decoration: none;
-  color: #353948;
+  color: rgb(242, 239, 228);
+  opacity: 0.7;
   text-decoration: none;
   font-size: 0.75rem;
   line-height: 100%;
@@ -100,8 +100,9 @@ div.contact-me:hover a {
 
 .side-drawer a:hover,
 .side-drawer a:active {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
   font-weight: 400;
+  opacity: 1;
 }
 
 .bottom-section {
@@ -127,7 +128,12 @@ span.active {
 }
 
 .active-route {
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 1px solid rgb(242, 239, 228);
+}
+
+.side-drawer .language__switcher * {
+  color: rgb(242, 239, 228);
+  opacity: 0.7;
 }
 
 .side-drawer span.active-lang {

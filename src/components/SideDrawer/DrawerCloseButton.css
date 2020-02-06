@@ -12,7 +12,7 @@
 }
 
 .close__drawer-button:hover .close__drawer-button__element {
-  background: rgb(5, 55, 85);
+  background: rgb(242, 239, 228);
 }
 
 .close__drawer-button__element {
@@ -20,7 +20,7 @@
   height: 2px;
   width: 30px;
   position: absolute;
-  background: rgba(5, 55, 85, 0.5);
+  background: rgba(242, 239, 228, 0.5);
   transition: transform 0.5s ease-in-out;
   /* transition: background 0.1s ease-in-out; */
 }

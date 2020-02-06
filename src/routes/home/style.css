@@ -1,7 +1,7 @@
 .home {
   height: 100%;
   width: 100%;
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   margin: 0;
 }
 
@@ -25,11 +25,16 @@
 }
 
 .line-glyph {
-margin: 60px auto;
+  margin: 50px auto;
   width: 100px;
   height: 3px;
-  background: rgb(5,55,85);
+  background: rgb(5, 55, 85);
 }
+
+.line-glyph.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 
 .sub {
   font-family: IndustryBook;
@@ -51,7 +56,7 @@ margin: 60px auto;
   padding: 3rem;
   font-size: 1.2rem;
   text-align: justify;
-  word-spacing:-2px;
+  word-spacing: -2px;
 }
 
 .home .icon-div {
@@ -82,6 +87,17 @@ margin: 60px auto;
   margin: 0 auto;
 }
 
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px 0 70px 0;
+  background: #1e1e1e;
+  margin-top: 80px;
+}
+
 @media (min-width: 700px) {
   .home .content {
     max-width: 750px;
@@ -106,26 +122,11 @@ margin: 60px auto;
 
   .home p {
     padding: 0;
-    /* font-size: 1.2rem; */
-    /* text-align: justify; */
     margin-bottom: 5rem;
   }
 
   .home .p1 {
     order: 1;
-  }
-  .home .p2 {
-    order: 4;
-  }
-  .home .p3 {
-    order: 5;
-  }
-  .home .p4 {
-    order: 8;
-  }
-  .home .content .p5 {
-    order: 9;
-    flex: 1 0 100%;
   }
 
   .home .icon1 {
@@ -136,6 +137,14 @@ margin: 60px auto;
     order: 3;
   }
 
+  .home .p2 {
+    order: 4;
+  }
+
+  .home .p3 {
+    order: 5;
+  }
+
   .home .icon3 {
     order: 6;
   }
@@ -144,8 +153,80 @@ margin: 60px auto;
     order: 7;
   }
 
+  .home .p4 {
+    order: 8;
+  }
+
+  .home .content .p5 {
+    order: 9;
+  }
+
   .home .content .icon5 {
     order: 10;
-    flex: 1 0 100%;
   }
+
+  .photo {
+    margin-top: 0;
+  }
+}
+
+.card {
+  margin: 0 auto;
+  width: 320px;
+  height: 506px;
+  position: relative;
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.card:hover .img-top {
+  display: inline;
+}
+
+.photo__subtitle {
+  font-family: IndustryBold;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.photo__sub-subtitle {
+  font-family: IndustryBook;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.white {
+  background-color: white;
+}
+
+.huge {
+  color: white;
+  font-size: 4rem;
+  font-family: IndustryBold;
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 50px;
+}
+
+.icon-div.cat {
+  padding: 2rem;
+  background: red;
+}
+
+.icon-div.cat img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.round {
+  border-radius: 50%;
 }

@@ -26,3 +26,9 @@
 .footer__note {
   color: white;
 }
+
+@media (max-width: 700px) {
+  .footer__wrapper {
+    margin-top: 50px;
+  }
+}
