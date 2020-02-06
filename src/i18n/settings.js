@@ -1,5 +1,5 @@
 //This file was created in order to prevent default
-//lazy loading of the modules and thus keeping ONE bundle.js 
+//lazy loading of the modules and thus keeping ONE bundle.js
 //file for later serving from embedded server
 
 import I18n from 'preact-i18nline/i18n';

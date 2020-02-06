@@ -3,9 +3,10 @@ import * as Chevron from '../../../assets/images/up-chevron.png';
 import * as BadgePL from '../../../assets/images/badge-pl.png';
 import * as BadgeEN from '../../../assets/images/badge-en.png';
 
-import I18n from '../../i18n/';
+import I18n from '../../i18n/settings';
 
-import { CarouselItems } from './carouselItems';
+import { carouselItemsEN } from './en';
+import { carouselItemsPL } from './pl';
 
 import './style.css';
 
@@ -49,12 +50,14 @@ class Carousel extends Component {
   );
 
   nextItem = () => {
+    const carouselItems =
+      I18n.locale === 'en' ? carouselItemsEN : carouselItemsPL;
     document.getElementById('item').classList.add('hide');
 
     setTimeout(() => {
       this.preventFaterSlideChange();
       this.setState({
-        currentItem: (this.state.currentItem + 1) % CarouselItems.length,
+        currentItem: (this.state.currentItem + 1) % carouselItems.length,
         hide: true
       });
       document.getElementById('item').classList.remove('hide');
@@ -62,6 +65,8 @@ class Carousel extends Component {
   };
 
   previousItem = () => {
+    const carouselItems =
+      I18n.locale === 'en' ? carouselItemsEN : carouselItemsPL;
     document.getElementById('item').classList.add('hide');
 
     setTimeout(() => {
@@ -69,7 +74,7 @@ class Carousel extends Component {
       this.setState({
         currentItem:
           this.state.currentItem - 1 < 0
-            ? CarouselItems.length - 1
+            ? carouselItems.length - 1
             : this.state.currentItem - 1
       });
       document.getElementById('item').classList.remove('hide');
@@ -78,6 +83,8 @@ class Carousel extends Component {
 
   render(props, state) {
     const badge = I18n.locale === 'en' ? BadgeEN : BadgePL;
+    const carouselItems =
+      I18n.locale === 'en' ? carouselItemsEN : carouselItemsPL;
     return (
       <div className='carousel__wrapper'>
         <img className='badge' src={badge} />
@@ -88,7 +95,7 @@ class Carousel extends Component {
             onClick={this.previousItem}
           />
 
-          {this.renderItem(CarouselItems[state.currentItem], state.hide)}
+          {this.renderItem(carouselItems[state.currentItem], state.hide)}
 
           <img
             className='chevron chevron--right'

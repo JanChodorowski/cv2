@@ -5,7 +5,7 @@ import * as KasiaGieron from '../../../assets/images/katarzyna-gieron.png';
 import * as Rafal from '../../../assets/images/rafal-dziegielewski.png';
 import * as Hubert from '../../../assets/images/hubert-bialecki.png';
 
-export const CarouselItems = [
+export const carouselItemsPL = [
   {
     content: `<strong>Zwraca uwagę na szczegóły</strong> i dba o spójność wizualną projektu - często zgłasza potrzebę dopracowania detali, jeśli coś jest niespójne bądź niezdefiniowane.`,
     avatar: Aga,
@@ -35,7 +35,7 @@ export const CarouselItems = [
     company: 'Monterail'
   },
   {
-    content: `Janek nie boi się dotykać backendu jeśli potrzebne są drobne zmiany. Poradził sobie dobrze z pinowaniem (feature).`,
+    content: `Janek nie boi się dotykać backendu jeśli potrzebne są zmiany. Poradził sobie dobrze z pinowaniem (feature).`,
     avatar: Rafal,
     name: 'Rafał Dzięgielewski',
     position: 'Backend developer',
@@ -80,14 +80,14 @@ export const CarouselItems = [
     company: 'Monterail'
   },
   {
-    content: `Janek refaktoruje kod kiedy trzeba i stara się, żeby był czytelny i przejrzysty.`,
+    content: `Janek <strong>refaktoruje kod</strong> kiedy trzeba i stara się, żeby był <strong>czytelny i przejrzysty</strong>.`,
     avatar: Hubert,
     name: 'Hubert Białęcki',
     position: 'Frontend developer / Tech lead',
     company: 'Monterail'
   },
   {
-    content: `Bardzo dużo wiedzy zdobywa poza pracą, cały czas się rozwija.`,
+    content: `Bardzo <strong>dużo wiedzy zdobywa</strong> poza pracą, <strong>cały czas się rozwija</strong>.`,
     avatar: KasiaGieron,
     name: 'Katarzyna Gieroń',
     position: 'QA Engineer',
