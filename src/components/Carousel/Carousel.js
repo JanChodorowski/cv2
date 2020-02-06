@@ -1,5 +1,10 @@
 import { h, Component } from 'preact';
 import * as Chevron from '../../../assets/images/up-chevron.png';
+import * as BadgePL from '../../../assets/images/badge-pl.png';
+import * as BadgeEN from '../../../assets/images/badge-en.png';
+
+import I18n from '../../i18n/';
+
 import { CarouselItems } from './carouselItems';
 
 import './style.css';
@@ -72,8 +77,10 @@ class Carousel extends Component {
   };
 
   render(props, state) {
+    const badge = I18n.locale === 'en' ? BadgeEN : BadgePL;
     return (
       <div className='carousel__wrapper'>
+        <img className='badge' src={badge} />
         <div className='carousel__carousel'>
           <img
             className='chevron chevron--left'

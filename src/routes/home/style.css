@@ -7,25 +7,38 @@
 
 .home .avatar {
   display: block;
-  max-width: 15rem;
+  max-width: 20rem;
   margin: 0 auto;
-  border-radius: 50%;
-  border: 1.5px solid rgba(52, 130, 231, 0.24);
+  /* border-radius: 50%; */
+  border: 8px solid white;
 }
 
 .greeting {
-  opacity: 0.7;
-  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: IndustryBold;
+  margin: auto;
+  margin-bottom: 50px;
   padding: 0 2rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-top: 10px;
 }
 
+.line-glyph {
+margin: 60px auto;
+  width: 100px;
+  height: 3px;
+  background: rgb(5,55,85);
+}
+
 .sub {
+  font-family: IndustryBook;
   font-size: 1.5rem;
-  opacity: 0.5;
   padding-top: 0;
+}
+
+.sub strong {
+  font-family: IndustryBold;
 }
 
 .home .content {

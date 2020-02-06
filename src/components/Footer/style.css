@@ -1,0 +1,28 @@
+.footer__wrapper {
+  background: rgb(5, 55, 85);
+  height: 150px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__github {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  display: block;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.footer__github:hover {
+  opacity: 0.5;
+}
+
+.footer__note {
+  color: white;
+}

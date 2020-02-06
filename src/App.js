@@ -1,20 +1,20 @@
-import { h, Component } from "preact";
-import { Router } from "preact-router";
+import { h, Component } from 'preact';
+import { Router } from 'preact-router';
 
-import Toolbar from "./components/Toolbar/Toolbar";
-import SideDrawer from "./components/SideDrawer/SideDrawer";
-import Backdrop from "./components/Backdrop/Backdrop";
+import Toolbar from './components/Toolbar/Toolbar';
+import SideDrawer from './components/SideDrawer/SideDrawer';
+import Backdrop from './components/Backdrop/Backdrop';
 
-import Home from "./routes/home";
-import Profile from "./routes/profile";
-import Contact from "./routes/contact"
+import Home from './routes/home';
+import Profile from './routes/profile';
+import Contact from './routes/contact';
 
-import I18n from "./i18n/settings";
+import I18n from './i18n/settings';
 
 export default class App extends Component {
   state = {
     sideDrawer: false,
-    locale: "en"
+    locale: 'en'
   };
 
   localeChanged = locale => {
@@ -22,7 +22,7 @@ export default class App extends Component {
   };
 
   componentDidMount() {
-    I18n.on("change", this.localeChanged);
+    I18n.on('change', this.localeChanged);
   }
 
   openDrawer = open => {
@@ -35,7 +35,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="app">
+      <div id='app'>
         <Toolbar
           drawerOpenClickHandler={() => this.openDrawer(true)}
           locale={this.state.locale}
@@ -54,9 +54,9 @@ export default class App extends Component {
         />
 
         <Router onChange={this.handleRoute}>
-          <Home path="/" />
-          <Profile path="/profile/" />
-          <Contact path="/contact" />
+          <Home path='/' />
+          <Profile path='/profile/' />
+          <Contact path='/contact' />
         </Router>
       </div>
     );
