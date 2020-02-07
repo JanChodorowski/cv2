@@ -66,9 +66,11 @@ const Home = () => {
 
       <div className='photo'>
         <div className='line-glyph white' />
-        <div className='huge'>
-          THE PERSON BEHIND <br /> MY SUCCESS
-        </div>
+        <div
+          className='huge'
+          dangerouslySetInnerHTML={{ __html: I18n.t('person_success') }}
+        />
+
         <div className='card'>
           <img src={Avatar} className='avatar' />
           <img src={Avatar2} className='avatar img-top' />
@@ -81,7 +83,9 @@ const Home = () => {
         <p className='p1'>
           {I18n.t('profileP4')}{' '}
           <Link href='/contact'>
-            <span style={{fontFamily: 'IndustryBold'}}>{I18n.t('contactMeLink')}</span>
+            <span style={{ fontFamily: 'IndustryBold' }}>
+              {I18n.t('contactMeLink')}
+            </span>
           </Link>
         </p>
         <div className='icon-div icon1'>

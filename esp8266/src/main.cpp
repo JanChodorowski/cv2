@@ -26,7 +26,10 @@ void setup()
   });
 
   // Serving static resources from /www/
-  server.serveStatic("/favicon.ico", SPIFFS, "/www/favicon.ico");
+  server.serveStatic("/favicon.ico", SPIFFS, "/favicon.ico");
+  server.serveStatic("/font1.woff2", SPIFFS, "/font1.woff2");
+  server.serveStatic("/font2.woff2", SPIFFS, "/font2.woff2");
+
 
   // Serving all other get requests with "/www/index.htm"
   // OPTIONS get a straight up 200 response

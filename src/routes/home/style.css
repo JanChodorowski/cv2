@@ -35,7 +35,6 @@
   margin-bottom: 0;
 }
 
-
 .sub {
   font-family: IndustryBook;
   font-size: 1.5rem;
@@ -55,7 +54,6 @@
 .home p {
   padding: 3rem;
   font-size: 1.2rem;
-  text-align: justify;
   word-spacing: -2px;
 }
 
@@ -229,4 +227,16 @@
 
 .round {
   border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .huge {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 520px) {
+  .home p {
+    text-align: justify;
+  }
 }
