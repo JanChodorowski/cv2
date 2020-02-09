@@ -31,7 +31,7 @@ platformio run --target uploadfs
 
 ## Frontend
 The frontend was written using Preact.js - fast React.js alternative with small code footprint.
-Because the device is battery-driven it was decided to not use any lazy loading. Upon request the user is provided with index.html which in turn requests bundle file. Because ESP SPIFFS (SPI Flash File System) accepts filenames of maximum 36 bytes, the webpack-generated hash names for font files needed to be manually shorten. All the files including bundle, and excluding index.html, were compressed using gzip.
+Because the device is battery-driven it was decided to not use any lazy loading. Upon request the user is provided with index.html which in turn requests bundle file. Because ESP SPIFFS (SPI Flash File System) accepts filenames of maximum 36 bytes, the webpack-generated hash names for font files needed to be manually shortened. All the files including bundle, and excluding index.html, were compressed using gzip.
 
 The only files not bundled inline are the PDFs with CVs which are, because of their size, loaded only upon explicit request.
 
