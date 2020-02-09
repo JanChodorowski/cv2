@@ -1,6 +1,6 @@
 # CV SERVER
 
-This project was created as a supplement to my job application as a Junior QA Engineer at Monterail.
+This project was created as a supplement to my job application to Mirumee.
 It's purpose is to deliver fully functional web server in smallest form factor possible.
 
 The battery should provide at least 2 hours of continuous usage.
@@ -69,7 +69,7 @@ The case for the server was designed in Rhino3d software and 3D printed on Creal
 <img src="documentation/instructions.png" alt="Instructions" width="400"/>
 
 2.  Connect to “Jan Chodorowski” Access Point using either mobile device or computer.
-3.  Open favorite web browser.
+3.  Open your web browser of choice.
 4.  Ignore the “no Internet” alerts if any.
 5.  Navigate to 192.168.4.1.
 6.  After using the device turn it off by reversing step 1.
