@@ -1,6 +1,6 @@
 # CV SERVER
 
-This project was created as a supplement to my job application to Mirumee.
+This project was created as a supplement to my job application to Mirumee.  
 It's purpose is to deliver fully functional web server in smallest form factor possible.
 
 The battery should provide at least 2 hours of continuous usage.
@@ -30,8 +30,8 @@ platformio run --target uploadfs
 ```
 
 ## Frontend
-The frontend was written using Preact.js – fast React.js alternative with small code footprint.
-Because the device is battery-driven it was decided to not use any lazy loading. Upon request the user is provided with index.html which in turn requests bundle file. The bundle file was compressed using gzip.
+The frontend was written using Preact.js - fast React.js alternative with small code footprint.
+Because the device is battery-driven it was decided to not use any lazy loading. Upon request the user is provided with index.html which in turn requests bundle file. Because ESP SPIFFS (SPI Flash File System) accepts filenames of maximum 36 bytes, the webpack-generated hash names for font files needed to be manually shorten. All the files including bundle, and excluding index.html, were compressed using gzip.
 
 The only files not bundled inline are the PDFs with CVs which are, because of their size, loaded only upon explicit request.
 
@@ -57,7 +57,7 @@ npm run build
 
 
 ## Case
-The case for the server was designed in Rhino3d software and 3D printed on Creality Ender3 3D printer.
+The case for the server was designed in Rhino3d software and 3D printed. Because of the details and microscopic model gaps, the logo was printed using DLP technology, whereas the casing was printed with FDM.
 
 <img src="documentation/assembly.png" alt="Assembly" width="600"/>
 
