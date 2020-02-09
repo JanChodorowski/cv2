@@ -6,7 +6,7 @@ It's purpose is to deliver fully functional web server in smallest form factor p
 The battery should provide at least 2 hours of continuous usage.
 
 
-<img src="documentation/final.jpg" alt="Final product" width="300"/>
+<img src="documentation/final.png" alt="Final product" width="300"/>
 
 ## Hardware
 1. ESP8266 WiFi SoC module - ESP-01S
